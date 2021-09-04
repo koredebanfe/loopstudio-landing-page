@@ -16,8 +16,10 @@
 .prettierignore
 
 ##AVOID SASS FILE
-.SCSS
+*.scss
 .map
 
 ##avoid design
-/design/
+design/
+/README-template.md
+/README-template.md
