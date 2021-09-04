@@ -1,0 +1,32 @@
+header {
+    background-image: url("../images/mobile/image-hero.jpg");
+
+    h1 {
+        text-transform: uppercase;
+        color: $navFontColor;
+        border: 1px solid $navFontColor;
+        margin: 0 auto;
+        padding: 1rem;
+        margin-bottom: 5rem;
+        width: 80vw;
+        margin-top: 10rem;
+    }
+    
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+    header {
+        background-image: url("../images/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        height: max-content;
+
+        h1 {
+            text-align: left;
+            width: 40vw;
+            margin-left: 3rem;
+        }
+    }
+}

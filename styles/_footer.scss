@@ -1,0 +1,61 @@
+.footer {
+    background-color: $navBgColor;
+    text-align: center;
+    padding: 3rem 0;
+
+    &__about__us {
+        margin-bottom: 2rem;
+    }
+
+    li {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        
+        &:hover {
+            border: 3px solid white;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $navFontColor;
+    }
+
+    
+
+    &__socials {
+        p {
+            color: $navFontColor;
+            margin-top: 20px;
+        }
+        img {
+           
+            margin-left: 15px;
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8vw;
+        padding-right: 8vw;
+
+        &__about__us {
+            img {
+                margin-right: 12rem;
+            }
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &__socials div{
+            margin-left: 90px;
+        }
+    }
+}
