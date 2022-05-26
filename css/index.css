@@ -1,0 +1,14 @@
+
+.blogr--head {
+    background-color: hsl(356, 100%, 66%);
+    border-bottom-left-radius: 30%;
+}
+
+.phone-section{
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+footer {
+    border-top-right-radius: 80px;
+}

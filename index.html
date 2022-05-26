@@ -5,221 +5,200 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Frontend Mentor | Loopstudios landing page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-	<header>
-		<nav class="nav">
-			<div class="nav__mobile hide">
-				<div class="nav__mobile__header">
-					<div class="nav__mobile__header__btn">
-						<img src="images/icon-close.svg" alt="close button" class="close__btn">
-					</div>
-	
-					<img src="images/logo.svg" alt="loopstudio logo" title="loopstudio">
-				</div>
-				
-				
+    <div class="blogr--head text-white p-4">
+        <nav class="navbar navbar-expand-lg pt-lg-2 p-4 text-white">
+            <div class="container-fluid">
+              <img src="./images/logo.svg" alt="logo" class="navbar-brand">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-md-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link text-white" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" href="./aboutUs.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#"> Careers</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#"> Products</a></li>
-					<li><a href="#"> Support</a></li>
-				</ul>
-			</div>
+          <section class="text-center">
+            <h1 class="m-5">
+              A modern publishing platform
+            </h1>
+            <p class="fs-4 m-2 text-white-50">
+              Grow your audience and build your online brand
+            </p>
+            <form action="" class="mb-5">
+              <input class="btn text-white d-inline-block m-3" type="button" value="Start for Free">
+              <input class="btn text-white d-inline-block m-3" type="submit" value="Learn More">
+            </form>
+        </section> 
+    </div>
+
+    <section>
+        <h2 class="text-center mt-5 mb-3 mb-md-5">
+            Designed for the future
+        </h2>
+        <div class="container">
+            <div class="row d.flex flex-md-row-reverse">
+                <div class="col-12 col-md-6 mt-md-5">
+                    <picture>
+                        <source media="(min-width:650px" srcset="./images/illustration-laptop-desktop.svg">
+                        <img src="./images/illustration-editor-mobile.svg" alt="" class="d-md-block img-fluid">
+                    </picture>
+                </div>
 
 
+                <div class="lh-lg col-12 col-md-6 p-5">
+                  <div>
+                    <h3 class="mb-3">
+                        Introducing an extensible editor
+                    </h3>
+                    <p>
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                        change the looks of a blog.
+                    </p>
+                  </div>
 
-			<div class="nav__header">
-				<img src="images/icon-hamburger.svg" alt="show button" class="show__btn">
-				<img src="images/logo.svg" alt="loopstudio logo">
-			</div>
-		</nav>
+                  <div>
+                    <h3 class="mt-5 mb-3">
+                        Robust content management
+                    </h3>
+                    <p>
+                        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                    </p>
+                  </div>
+                </div>    
+            </div>
+        </div>
+    </section>
 
-		<h1>
-			Immersive experiences that deliver
-		</h1>
-	</header>
-	<!-- main content starts from here -->
-	<main class="loopstudio">
-		<section class="loopstudio__purpose">
-			<picture>
-				<source media="(min-width: 600px)" srcset="images/desktop/image-interactive.jpg">
-				<img src="images/mobile/image-interactive.jpg" alt="interactive">
-			</picture>
+    <section>
+        <div class="container-fluid lh-lg">
+            <div class="row bg-black phone-section">
+                <div class="col-12 col-md-5">
+                    <img src="./images/illustration-phones.svg" alt="" class="img-fluid">
+                </div>
 
-			<article>
-				<h2>
-					The leader in interactive VR
-				</h2>
-				<p>
-					Founded in 2011, Loopstudios has been producing world-class virtual reality 
-					projects for some of the best companies around the globe. Our award-winning 
-					creations have transformed businesses through digital experiences that bind 
-					to their brand.
-				</p>
-			</article>
-		</section>
+                <div class="col-12 col-md-7 d-md-flex  flex-md-column ps-5 justify-content-md-center">
+                    <h3 class="text-white text-center text-md-start">
+                        State of the Art Infrastructure
+                    </h3>
+                    <p class="text-white-50">
+                        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<section class="loopstudio__content">
-			<div class="loopstudio__content__head">
-				<h2>
-					Our creations
-				</h2>
+    <section>
+        <div class="container">
+            <div class="row d-flex flex-md-row-reverse p-5 lh-lg">
+                <div class="col-12 col-md-6 mt-4 mb-4">
+                    <div>
+                        <h3 class="mt-4 mb-3 text-center text-md-start">
+                            Free, open, simple
+                        </h3>
+                        <p>
+                            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                        </p>
+                    </div>
 
-				<a href="#" class="all__videos">
-					See all
-				</a>
-			</div>
+                    <div>
+                        <h3 class="mt-4 mb-3 text-center text-md-start">
+                            Powerful tooling
+                        </h3>
 
-			<div class="loopstudio__content__videos">
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-deep-earth.jpg">
-						<img src="images/mobile/image-deep-earth.jpg" alt="Deep earth">
-					</picture>
-					<figcaption>
-						Deep <br>
-						earth
-					</figcaption>
-				</figure>
+                        <p>
+                            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                            capable of producing even the most complicated sites.
+                        </p>
+                    </div>
+                </div>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset= "images/desktop/image-night-arcade.jpg">
-						
-						<img src="images/mobile/image-night-arcade.jpg" alt="night arcade">
-					</picture>
-					
-					<figcaption>
-						Night <br>
-						arcade
-					</figcaption>
-				</figure>
+                <div class="col-12 col-md-6">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="./images/illustration-laptop-desktop.svg">
+                        <img src="./images/illustration-laptop-mobile.svg" alt="" class="img-fluid">
+                    </picture>
+                </div>
+            </div>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px )" srcset="images/desktop/image-soccer-team.jpg">
-						<img src="images/mobile/image-soccer-team.jpg" alt="soccer team">
-					</picture>
-					<figcaption>
-						Soccer <br>
-						team VR
-					</figcaption>
-				</figure>
+        </div>
+    </section>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-grid.jpg">
-						<img src="images/mobile/image-grid.jpg" alt="The grid">
-					</picture>
-					<figcaption>
-						The <br>
-						grid
-					</figcaption>
-				</figure>
+  <footer class="bg-black">
+      <div class="container">
+          <div class="row text-white px-3 py-5">
+              <div class="col-12 col-md-3 text-center text-md-start my-4">
+                  <img src="./images/logo.svg" alt="logo">
+              </div>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-from-above.jpg">
-						<img src="images/mobile/image-from-above.jpg" alt="from above">
-					</picture>
-					<figcaption>
-						From up <br>
-						above VR
-					</figcaption>
-				</figure>
+              <div class="col-12 col-md-3">
+                  <h5 class="text-center text-md-start my-4">
+                    Product
+                  </h5>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-pocket-borealis.jpg">
-						<img src="images/mobile/image-pocket-borealis.jpg" alt="pocket borealis">
-					</picture>
-					<figcaption>
-						Pocket <br>
-						borealis
-					</figcaption>
-				</figure>
+                  <div class="">
+                    <a class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none" href="#">Overview</a>
+                    <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Pricing</a>
+                    <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Marketplace</a>
+                    <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Features</a>
+                    <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Integrations</a>
+                  </div>
+              </div>
 
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-curiosity.jpg">
-						<img src="images/mobile/image-curiosity.jpg" alt="The curiosity">
-					</picture>
-					<figcaption>
-						The <br>
-						curiosity
-					</figcaption>
-				</figure>
-	
-				<figure>
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/desktop/image-fisheye.jpg">
-						<img src="images/mobile/image-fisheye.jpg" alt="Make it fisheye">
-					</picture>
-					<figcaption>
-						Make it <br>
-						fisheye
-					</figcaption>
-				</figure>
-			</div>
+              <div class="col-12 col-md-3">
+                <h5 class="text-center text-md-start my-4">
+                    Company
+                </h5>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">About</a>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Team</a>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Blog</a>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none"> Careers</a>
+            </div>
 
-			<a href="#" class="loopstudio__content__mobile all__videos">
-				See all
-			</a>
-		</section>
-	</main>
-	<!-- footer content -->
-	<footer class="footer">
-		<div class="footer__about__us">
-			<img src="images/logo.svg" alt="loopstudio logo">
-
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#"> Careers</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#"> Products</a></li>
-				<li><a href="#"> Support</a></li>
-			</ul>
-		</div>
-		<div class="footer__socials">
-			<div>
-				<a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
-			    <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
-			    <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
-			    <a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a>
-			</div>
-
-			<p>
-				© 2021 Loopstudios. All rights reserved.
-			</p>
-		</div>
-		
-	</footer>
+            <div class="col-12 col-md-3">
+                <h5 class="text-center text-md-start my-4">
+                    Connect
+                </h5>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Contact</a>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">Newsletter</a>
+                <a href="#" class="d-block text-center text-md-start mb-2 text-white-50 text-decoration-none">LinkedIn</a>
+            </div>
+          </div>
+      </div>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="github.com/koredebanfe">Korex</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </div>
-
-  <script src="/index.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
+  <script src="./js/bootstrap.js"></script>
 </body>
 </html>
